@@ -1,0 +1,70 @@
+//Austin Smothers
+//Homework 7 Pseudocode
+//10 March, 2015
+
+Start
+	Declarations
+		num names = 10		//Optional: Replace 10 with 100000000
+		num employee[names]	//to create a program with a sential
+		num town = 0		//value far higher than the current #
+		string home[town]	//of employees at Black Dot. This
+		num x			//program was designed with future
+		num y			//expansion of the Black Dot Co.
+		num totalstaff = 0	//in mind, while meeting the request
+		num QUIT = 99999	//for a realistic sentinal value.
+	town = names
+	EmployeeNames()
+	Carpoolers()
+	NonCarpoolers()
+stop
+//-----------------------------------------------------------------------------------
+EmployeeNames()
+	x = 0
+	y = 0
+	output "Enter the employee's name in Last Name, First Name format or", QUIT, "to quit"
+	input employee[x]
+	x = x + 1
+	while x < names AND employee[x] <> QUIT
+		output "Enter the employee's name in Last Name, First Name format"
+		input employee[x]
+		EmployeeLocations()
+		x = x + 1
+	endwhile
+	totalstaff = x 
+return
+//------------------------------------------------------------------------------------
+EmployeeLocations()
+	output "Enter the employee's home town"
+	input home[y]
+	if home[y] = Wonder Lake OR home[y] = Woodstock then
+		home[y] = 1
+		else then
+			home[y] = 0
+	endif
+	if home[y] = 1 then
+		output employee[x], "is eligible for carpooling!"
+		elseif home[y] = 0 then
+			output employee[x], "is not eligible for carpooling!"
+	endif
+	y = y + 1
+return
+//------------------------------------------------------------------------------------
+Carpoolers()
+	x = 0
+	y = 0
+	while x < totalstaff AND home[y] <> 0
+		output employee[x] <nolinefeed> output home[y]
+		x = x + 1 
+		y = y + 1
+	endwhile
+return
+//-----------------------------------------------------------------------------------
+NonCarpoolers()
+	x = 0
+	y = 0
+	while x < totalstaff AND home[y] = 0
+		output employee[x] <nolinefeed> output home[y]
+		x = x + 1
+		y = y + 1 
+	endwhile
+return

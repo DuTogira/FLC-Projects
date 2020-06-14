@@ -1,0 +1,63 @@
+//Austin Smothers
+//Homework 4
+//17 February, 2015
+//-------------------------------------------------------------------------------
+Start
+	Declarations
+		string Rock
+		string Paper
+		string Scissors
+		string Choice
+		string UserChoice
+		string Salt
+	playagain()	
+Stop
+//-------------------------------------------------------------------------------
+playagain()
+	Disp "Would you like to play? Y/N?"
+	input Salt
+	while Salt = "Y"
+		guess()
+		newguess()
+		response()
+		winner()
+		input Salt
+	endwhile
+return	
+//-------------------------------------------------------------------------------
+guess()
+	set Choice = Rock
+return
+//-------------------------------------------------------------------------------
+newguess()
+	if Choice = Rock then
+		set Choice = Paper
+	else
+		if Choice = Paper then
+			set Choice = Scissors
+		else
+			if Choice = Scissors then
+				set Choice = Rock
+			endif
+return
+//-------------------------------------------------------------------------------
+response()
+	input UserChoice
+	while UserChoice =/ "Rock" OR "Paper" OR "Scissors"
+		Disp "Please enter Rock, Paper, or Scissors."
+		input UserChoice
+	endwhile
+return
+//-------------------------------------------------------------------------------
+winner()
+	if Choice = Rock AND UserChoice = "Paper" OR Choice = Paper AND UserChoice = "Scissors" OR Choice = Scissors AND UserChoice = "Rock" then
+		Disp "You won!"
+	endif
+	if Choice = Rock AND UserChoice = "Scissors" OR Choice = Paper AND UserChoice = "Rock" OR Choice = Scissors AND UserChoice = "Paper" then
+		Disp "I won!"
+	endif
+	if Choice = Rock AND UserChoice = "Rock" OR Choice = Paper AND UserChoice = "Paper" OR Choice = Scissors AND UserChoice = "Scissors" then
+		Disp "We Tied"
+	endif
+return
+//-------------------------------------------------------------------------------

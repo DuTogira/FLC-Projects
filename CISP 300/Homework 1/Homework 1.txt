@@ -1,0 +1,18 @@
+//Austin Smothers
+//Homework 1
+//January 27, 2015
+
+Start
+	Set euroValue = USD * .89
+	Set yenValue = USD * 118.43
+	Display "Would you like to convert to Euros or Yen?"
+	Input userResponse
+	Display "Please input the quantity of USD you would like converted."
+	Input USD
+		If userResponse = "Euros"
+			Output euroValue
+			Display euroValue
+		Else								//I used an else statement because most users will input one of the two keywords asked for earlier in the program, but all the same, I thought being able to input "Fried Chicken" and still have the program convert USD to Yen was a nice fail-safe, and comedic gold
+			Output yenValue
+			Display yenValue
+Stop

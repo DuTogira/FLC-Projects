@@ -1,0 +1,42 @@
+What does the line "v.push_back(fContents)" do?
+A) Copy one line from fContents into vector v	C) Copy all lines from fContents into vector v
+B) Make pancakes				D) Read one line from the text file into fContents
+What is the purpose of openR?
+A) Feed the dog					C) To obtain your answers to these questions
+B) Find # correct answers			D) Read the text file into vector v
+What is the purpose of userAns[]?
+A) To check if your answers are correct		C) To tell you how antsy you are
+B) To store your answers to these questions	D) To figure out what your answer will be
+What is the purpose of the failbit?
+A) To be filled with bad input			C) Nothing, it's a failure
+B) To tell you what your score is (I'm funny)	D) To delete bad input
+Why don't I use any functions for input validation?
+A) I don't know how to use functions		C) Only one input variable; I don't need functions
+B) You can't use arrays as parameters		D) You can't use functions for input validation
+What is the purpose of questionR?
+A) To make up 10 questions			C) To display the 10 questions
+B) To display the 10 questions & accept answers	D) To make biscuits
+What is the purpose of reviewR?
+A) To review & make sure the program works	C) To help you review your math homework
+B) To validate the input of your answers	D) To review how many answers you got right
+What does the line "while(getline(file, fContents))" do?
+A) Change the cat's litter box			C) Copy the text file to fContents all at once
+B) Copy the text file to fContents line by line	D) To copy fContents back into the file
+What does the array ranNum do?
+A) Stores the randomly generated numbers	C) Generate AND store random numbers
+B) Generate random numbers			D) Trick question, it's random
+What does the variable numRight do?
+A) Make numbers; it's a number wright		C) Track how many questions you got right
+B) It's stores the right number			D) Track how many questions you got wrong
+A
+D
+B
+A
+C
+C
+D
+B
+A
+D
+
+
